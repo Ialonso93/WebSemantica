@@ -1,0 +1,78 @@
+<!------------------------------------------------
+|   Autor: Ivan Alonso
+|   Módulo: LMGSI
+|   Unidad: 1
+|   Tarea: Tarea Evaluativa 2.
+|   Autoevaluación: https://drive.google.com/file/d/19wd1iH6XjLwwLo1u3_20qr8zOMxwg6Fb/view?usp=sharing
+|   Descripcion: Indice de la web que muestra mi CV.
+------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body style=" background-color: #a5d6d0;">
+    
+    <header>
+        <h1>AUTODOCUMENT</h1>
+        <h2>Especialistas en automoviles</h2>
+    </header>
+
+    <nav>
+        <section class="boton">
+            <li><a href="Index.html">Inicio</a></li>
+        </section>
+        <section class="boton">
+            <li><a href="Escuderias.html">Escuderias</a></li>
+        </section>
+        <section class="boton">
+            <li><a href="Noticias.html">Noticias</a></li>
+        </section>
+        <section class="boton">
+            <li><a href="Contacto.html">Contacto</a></li>
+        </section>
+    </nav>
+
+    <h2>Contacta con nosotros</h2>
+    
+    <!-- Seccion del formulario --->
+    <form action="Contacto.html" method="POST">
+        <fieldset>
+            <legend> Formulario </legend>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="lname">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="lname">Correo Electronico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="modulo">Que buscas?:</label>
+            <select id="mod" name="mod">
+                <option value="Comprar">Comprar</option>
+                <option value="Vender">Vender</option>
+                <option value="Informacion">Informacion</option>
+            </select>
+            <label for="lname">Marca:</label>
+            <input type="text" id="marca" name="marca">
+            <label for="lname">Modelo:</label>
+            <input type="text" id="modelo" name="modelo">
+            <label for="lname">Descripcion:</label>
+            <input type="text" id="descripcion" name="descripcion">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <footer class="linea">
+        <p>AUTODOCUMENT</p>
+    </footer>
+</body>
+</html>
